@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
 const { Schema } = mongoose
 
+mongoose.set('strictQuery', true);
+
 const bookSchema = new Schema({
   name: {
     type: String,
